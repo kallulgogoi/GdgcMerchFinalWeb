@@ -33,11 +33,11 @@ function Hero() {
   };
 
   if (isLoading) {
-    return <div className="hero loading">Loading products...</div>;
+    return <div className="hero loading text-black">Loading products...</div>;
   }
 
   if (!products || products.length === 0) {
-    return <div className="hero error">No products could be found.</div>;
+    return <div className="hero error text-black">No products could be found.</div>;
   }
 
   const activeProduct = products.find(p => p.active) || products[0];
